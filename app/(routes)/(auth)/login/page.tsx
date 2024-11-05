@@ -3,11 +3,10 @@ import Link from 'next/link';
 import { Checkbox } from "@/components/ui/checkbox"
 import { Terms } from '../components/Terms';
 import { LoginForm } from './LoginForm';
-import { auth } from '@/auth';
 
 
 export default  async function Loginpage() {
-    const session = await auth();
+   
 
     return (
         <div>
